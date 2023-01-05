@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+    background: #FFF8F3;
+    padding-top: 51px;
+    background-image: url('../images/header_bg.png'), url('../images/developer.png');
+    background-repeat: no-repeat;
+    background-position: bottom right, 23px;
+    background-size: 744px 444px, 100px 688px;
+}
+
+.btn-primary {
+
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+    background: #FD6E0A;
+    border-radius: 5px;
+    border: none;
+    padding: 18px 35px 19px 36px;
+}
+
+.btn-secondary {
+    font-weight: 700;
+    font-size: 20px;
+    background: #ffffff;
+    color: #FD6E0A;
+    border: 1px solid #FD6E0A;
+    border-radius: 5px;
+    padding: 18px 35px 19px 36px;
+    margin-left: 30px;
+}
+
+/* Navigation Styles */
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 200px;
+}
+
+.nav-title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 45px;
+    color: #181818;
+}
+
+.nav-title-style {
+    color: #FD6E0A;
+}
+
+.nav-list-item {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list-item li {
+    list-style: none;
+    font-size: 20px;
+    line-height: 27px;
+    color: #474747;
+    margin-left: 51px;
+}
+
+
+/* Banner Styles */
+
+
+.banner {
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 200px;
+
+
+}
+
+.banner div {
+
+    width: 585px;
+    height: 370px;
+
+}
+
+.banner-greeting {
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 61px;
+    margin-bottom: 5px;
+    color: #474747;
+}
+
+.banner-title {
+    font-weight: 700;
+    font-size: 85px;
+    line-height: 116px;
+    color: #181818;
+    margin-bottom: 20px;
+}
+
+.banner-descripton {
+    color: #757575;
+    margin-bottom: 30px;
+    line-height: 1.5rem;
+    font-size: 18px;
+}
+
+
+.banner-img {
+    border: 1px solid #000000;
+    margin-top: 47px;
+    margin-left: 115px;
+    width: 500px;
+    height: 592px
+}
