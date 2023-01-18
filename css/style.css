@@ -1,28 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
+
+/* Common css style  */
 * {
     margin: 0;
+    padding: 0;
     font-family: 'Open Sans', sans-serif;
 }
 
 .header {
+    width: 100%;
     background: #FFF8F3;
-    padding-top: 51px;
     background-image: url('../images/header_bg.png'), url('../images/developer.png');
     background-repeat: no-repeat;
-    background-position: bottom right, 23px;
-    background-size: 710px 440px, 100px 688px;
+    background-position: bottom right, 1.5rem;
+    background-size: 55%, 7% 88%;
 }
 
 .btn-primary {
-
     font-weight: 700;
     font-size: 20px;
     color: #FFFFFF;
     background: #FD6E0A;
     border-radius: 5px;
     border: none;
-    padding: 18px 35px 19px 36px;
+    padding: 1.16rem 1.5rem;
 }
 
 .btn-secondary {
@@ -32,16 +34,30 @@
     color: #FD6E0A;
     border: 1px solid #FD6E0A;
     border-radius: 5px;
-    padding: 18px 35px 19px 36px;
+    padding: 1.16rem 1.8rem;
     margin-left: 30px;
 }
 
-/* Navigation Styles */
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 75%;
+}
 
+section {
+    padding-top: 130px;
+}
+
+main {
+    width: 100%;
+}
+
+/* Navigation Styles */
 .nav-menu {
     display: flex;
     justify-content: space-between;
-    margin: 0 200px;
+    /* align-items: center; */
+    padding-top: 3.5rem;
 }
 
 .nav-title {
@@ -57,7 +73,9 @@
 
 .nav-list-item {
     display: flex;
+    justify-content: center;
     align-items: center;
+    gap: 5rem;
 }
 
 .nav-list-item li {
@@ -65,26 +83,21 @@
     font-size: 20px;
     line-height: 27px;
     color: #474747;
-    margin-left: 51px;
 }
 
 
 /* Banner Styles */
 
-
 .banner {
     display: flex;
     align-items: center;
-    margin: 0 0 0 200px;
-
-
+    width: 100%;
+    padding-top: 3rem;
+    position: relative;
 }
 
-.banner div {
-
-    width: 585px;
-    height: 370px;
-
+.banner-content {
+    margin-left: 175px;
 }
 
 .banner-greeting {
@@ -110,31 +123,27 @@
     font-size: 18px;
 }
 
-
 .banner-img {
-    border: 1px solid #000000;
-    margin-top: 47px;
-    margin-left: 115px;
-    width: 500px;
-    height: 592px
+    text-align: right;
+    padding-right: 38px;
+    height: 679px;
+    width: 85%;
 }
 
-/* Main section style */
-main {
-    max-width: 1015px;
-    margin: 0 auto;
+.banner-img img {
+    height: 100%;
+    margin-bottom: -6px;
 }
 
-/* About section styles */
-section {
-    margin-top: 130px;
-}
+/* about section  */
 
 .about-me {
     background: #FFF8F3;
     border-radius: 10px;
-    padding: 130px 140px;
+}
 
+.about-me>div {
+    padding: 140px 130px;
 }
 
 .section-title {
@@ -154,7 +163,7 @@ section {
 .about-info-container {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .about-info .info-title {
@@ -171,7 +180,8 @@ section {
 /* What i do section styles */
 
 .what-i-do .section-description {
-    padding: 0 140px;
+    width: 90%;
+    margin: 0 auto;
     text-align: center;
     margin-bottom: 50px;
 }
@@ -266,9 +276,7 @@ section {
     display: flex;
     justify-content: space-around;
     gap: 117px;
-    max-width: 1015px;
-    margin: 0 auto;
-    padding: 130px 140px;
+    padding: 130px 0;
 }
 
 .contact-description {
@@ -308,11 +316,12 @@ section {
     justify-content: center;
 }
 
+
 .contact-form .input-form,
 textarea {
     width: 100%;
     margin-bottom: 24px;
-    padding: 18px 20px;
+    padding: 18px 0 18px 10px;
     border: none;
     border-radius: 5px;
     outline: none;
